@@ -1,0 +1,10 @@
+# Terraform files
+*.tfvars
+*.tfstate
+*.tfstate.*
+*.tfbackend
+*.auto.tfvars
+*.tfstate.backup
+*.tfstate.*.backup
+.terraform.lock.hcl
+.terraform/
