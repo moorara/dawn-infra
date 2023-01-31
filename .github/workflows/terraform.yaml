@@ -1,0 +1,28 @@
+name: Terraform
+on: [push]
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate jitsi/vultr
+        uses: gardenbed/actions/terraform@main
+        with:
+          path: ./jitsi/vultr
+          args: validate
+      - name: Validate v2ray/vultr
+        uses: gardenbed/actions/terraform@main
+        with:
+          path: ./v2ray/vultr
+          args: validate
+      - name: Validate x-ui/aws
+        uses: gardenbed/actions/terraform@main
+        with:
+          path: ./x-ui/aws
+          args: validate
+      - name: Validate x-ui/vultr
+        uses: gardenbed/actions/terraform@main
+        with:
+          path: ./x-ui/vultr
+          args: validate
