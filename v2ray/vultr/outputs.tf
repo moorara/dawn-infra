@@ -5,8 +5,8 @@ output "server_ip" {
   value       = vultr_instance.server.main_ip
 }
 
-output "server_subdomain" {
-  description = "The subdomain address for accessing the V2Ray server."
+output "server_url" {
+  description = "The URL for accessing the V2Ray server."
   value       = local.subdomain
 }
 
