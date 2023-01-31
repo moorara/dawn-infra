@@ -26,7 +26,7 @@ resource "vultr_instance" "server" {
     type        = "ssh"
     user        = "root"
     host        = self.main_ip
-    private_key = file(local.private_key_file)
+    private_key = tls_private_key.server.private_key_openssh
   }
 
   # Configure firewall rules
