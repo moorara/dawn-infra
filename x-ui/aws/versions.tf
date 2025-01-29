@@ -29,7 +29,7 @@ terraform {
     # https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "~> 4.30"
+      version = "~> 5.0"
     }
     # https://registry.terraform.io/providers/hashicorp/aws/latest/docs
     aws = {
