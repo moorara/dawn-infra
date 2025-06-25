@@ -3,38 +3,38 @@
 
 terraform {
   # Root modules should constraint both a lower and upper bound on versions for each provider.
-  required_version = "~> 1.8"
+  required_version = "~> 1.12"
 
   required_providers {
-    # https://registry.terraform.io/providers/hashicorp/local/latest/docs
+    # https://registry.terraform.io/providers/hashicorp/local/latest
     local = {
       source  = "hashicorp/local"
       version = "~> 2.5"
     }
-    # https://registry.terraform.io/providers/hashicorp/random/latest/docs
+    # https://registry.terraform.io/providers/hashicorp/random/latest
     random = {
       source  = "hashicorp/random"
-      version = "~> 3.6"
+      version = "~> 3.7"
     }
-    # https://registry.terraform.io/providers/hashicorp/tls/latest/docs
+    # https://registry.terraform.io/providers/hashicorp/tls/latest
     tls = {
       source  = "hashicorp/tls"
-      version = "~> 4.0"
+      version = "~> 4.1"
     }
-    # https://registry.terraform.io/providers/vancluever/acme/latest/docs
+    # https://registry.terraform.io/providers/vancluever/acme/latest
     acme = {
       source  = "vancluever/acme"
-      version = "~> 2.21"
+      version = "~> 2.32"
     }
-    # https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs
+    # https://registry.terraform.io/providers/cloudflare/cloudflare/latest
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "~> 4.30"
+      version = "~> 5.6"
     }
-    # https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+    # https://registry.terraform.io/providers/hashicorp/aws/latest
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.46"
+      version = "~> 6.0"
     }
   }
 }
