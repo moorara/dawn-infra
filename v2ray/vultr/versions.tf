@@ -24,7 +24,7 @@ terraform {
     # https://registry.terraform.io/providers/vancluever/acme/latest
     acme = {
       source  = "vancluever/acme"
-      version = "~> 2.32"
+      version = "~> 3.0"
     }
     # https://registry.terraform.io/providers/cloudflare/cloudflare/latest
     cloudflare = {
